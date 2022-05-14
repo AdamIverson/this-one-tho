@@ -1,10 +1,13 @@
-import './App.css';
-import Nav from '../Nav/Nav';
+import "./App.css";
+import Nav from "../Nav/Nav";
+import { Provider } from "react-redux";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
+      <Provider>
+        <Nav />
+      </Provider>
     </div>
   );
 }
